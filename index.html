@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/x-icon" href="/icons/sun.png">
+    <title>Weather Forecast</title>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="city-placeholder" class="clearfix">
+            <input id="input-city" type="text" placeholder="Wprowadź nazwę miasta">
+            <img id="sub" src="icons/loupe.png" alt="">
+        </div>
+        <div id="current-day" class="clearfix">
+            <p id="city">Miasto: </p>
+            <img id="weather-image" src="" alt="">        
+            
+           
+            <div id="current-weather-box">   
+                <div class="current-weather-details">
+                    <p id="temp"></p>
+                </div>
+                <div class="current-weather-details">
+                    <p id="pressure"></p>
+                </div>
+                <div class="current-weather-details">
+                    <p id="min-temp"></p>
+                </div>
+            </div>
+            <div id="current-weather-box2">
+                <div class="current-weather-details">
+                    <p id="wind"></p>
+                </div>
+                <div class="current-weather-details">
+                    <p id="max-temp"></p>
+                </div>
+                <div class="current-weather-details">
+                    <p id="wind-dir-title">Kierunek wiatru:</p>
+                    <img id="wind-dir" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="weather-by-hour-main-container">
+            <h2>Dzisiaj</h2>
+            <div class="weather-by-hour-container">
+                <div class="weather-by-hour">
+                    <p>00:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>04:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>08:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>12:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>16:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>20:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-by-hour-main-container">
+            <h2>Jutro</h2>
+            <div class="weather-by-hour-container">
+                <div class="weather-by-hour">
+                    <p>00:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>04:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>08:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>12:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>16:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>20:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-by-hour-main-container">
+            <h2>Pojutrze</h2>
+            <div class="weather-by-hour-container">
+                <div class="weather-by-hour">
+                    <p>00:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>04:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>08:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>12:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>16:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+                <div class="weather-by-hour">
+                    <p>20:00</p>
+                    <img class="mini-weather-icon" src="icons/sun.png" alt="">
+                    <p class="temp-by-hour">5</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
